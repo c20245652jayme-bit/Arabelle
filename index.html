@@ -5,63 +5,165 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
-    
-<h1 class="text-3xl font-bold underline text-red-700">
-      Arabelle Jayme
-    </h1>
+    <body class="bg-purple-100 text-gray-800">
 
-    <button id="switch">Switch</button>
-    <header>
-        <nav>
-            <span>@_arbljym</span>
-            <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact Me</a></li>
+    <header class="bg-purple-100 border-b border-purple-200">
+
+        <nav class="flex justify-between items-center px-[50px] py-[20px] max-[600px]:flex-col max-[600px]:gap-[15px]">
+
+            <h1 class="text-2xl font-bold text-purple-700">
+                Arabelle Jayme
+            </h1>
+
+            <ul class="flex gap-[25px]">
+
+                <li>
+                    <a href="#projects" class="hover:text-purple-600">
+                        Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#services" class="hover:text-purple-600">
+                        Services
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="hover:text-purple-600">
+                        Contact
+                    </a>
+                </li>
+
             </ul>
+
         </nav>
+
     </header>
 
-    <main>
-        <section id="projects"> 
-            <h2 class="projects">My Projects</h2>
-            <p>Personal portfolio, payroll system, company website, startup website, and compliance monitoring system.
-            </p>
-        </section>
 
-        <section id="services">
-            <h2 class="services">My Services</h2>
-            <p>Website Creation, System Creation, AI Automation, Database Management, Project Management, Systems
-                Analyst</p>
-        </section>
+    <section class="text-center py-[50px] px-[20px]">
 
-        <section id="contact">
-            <h2 class="contact">Let's build together!</h2>
-            <form action="#">
-                <!-- Name -->
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+        <p class="text-purple-600">
+            @_arbljym
+        </p>
 
-                <!-- Email -->
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required>
+        <h2 class="text-3xl font-bold text-purple-800 mt-[10px]">
+            Hi Welcome!
+        </h2>
 
-                <!-- Message -->
-                <label for="message">Message</label>
-                <textarea name="message" id="message" rows="5" required></textarea>
+        <p class="text-gray-600 mt-[10px]">
+          
+        </p>
 
-                <!-- Submit -->
-                <button type="submit">Send Message</button>
+        <button id="switch"
+            class="bg-pink-600 text-white px-[20px] py-[10px] rounded-[8px] mt-[20px] hover:bg-purple-700">
+            Switch
+        </button>
+
+    </section>
+
+
+    <main class="max-w-[950px] mx-auto px-[25px] pb-[50px]">
+
+        <div class="grid grid-cols-2 gap-[25px] max-[700px]:grid-cols-1">
+
+
+            <section id="projects"
+                class="bg-pink border border-pink-200 rounded-[10px] p-[25px]">
+
+                <h2 class="text-xl font-bold text-purple-700 mb-[15px]">
+                    My Projects
+                </h2>
+
+                <ul class="space-y-[8px]">
+                    <li>Personal Portfolio</li>
+                    <li>Payroll System</li>
+                    <li>Startup Website</li>
+                    
+                </ul>
+
+            </section>
+
+
+            <section id="services"
+                class="bg-pink border border-pink-200 rounded-[10px] p-[25px]">
+
+                <h2 class="text-xl font-bold text-purple-700 mb-[15px]">
+                    My Services
+                </h2>
+
+                <ul class="space-y-[8px]">
+                    <li>Website Creation</li>
+                    <li>System Creation</li>
+                
+                </ul>
+
+            </section>
+
+        </div>
+
+
+        <section id="contact"
+            class="bg-pink border border-pink-200 rounded-[10px] p-[25px] mt-[25px]">
+
+            <h2 class="text-xl font-bold text-purple-700 mb-[15px]">
+                Contact Me
+            </h2>
+
+            <form action="#" class="flex flex-col gap-[10px]">
+
+                <label for="name">
+                    Name
+                </label>
+
+                <input type="text" id="name" name="name"
+                    class="border border-pink-200 rounded-[6px] p-[8px]"
+                    required>
+
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input type="email" id="email" name="email"
+                    class="border border-pink-200 rounded-[6px] p-[8px]"
+                    required>
+
+
+                <label for="message">
+                    Message
+                </label>
+
+                <textarea id="message" name="message" rows="5"
+                    class="border border-pink-200 rounded-[6px] p-[8px]"
+                    required></textarea>
+
+
+                <button type="submit"
+                    class="bg-pink-600 text-white py-[10px] rounded-[8px] mt-[5px] hover:bg-purple-700">
+                    Send Message
+                </button>
+
             </form>
+
         </section>
+
     </main>
 
-    <!-- <script src="script.js"></script> -->
+
+    <footer class="bg-purple-100 border-t border-purple-200 text-center py-[20px]">
+
+        <p class="text-gray-600">
+            
+        </p>
+
+    </footer>
+
 </body>
 
-</html>
+</html>>
